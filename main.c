@@ -1,15 +1,16 @@
-#include "monty.h"
 #include "lists.h"
+#include "monty.h"
+
 
 data_t data = DATA_INIT;
 
 /**
- * monty - helper function for main function
- * @args: pointer to struct of arguments from main
+ * monty - my func ..
+ * @args: para ..
  *
- * Description: opens and reads from the file
- * containing the opcodes, and calls the function
- * that will find the corresponding executing function
+ * Description: des here. ..
+ * 
+ * Return: nothing ..s
  */
 void monty(args_t *args)
 {
@@ -54,11 +55,11 @@ void monty(args_t *args)
 }
 
 /**
- * main - entry point for monty bytecode interpreter
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - my func ..
+ * @argc: para ..
+ * @argv: para ..
  *
- * Return: EXIT_SUCCESS or EXIT_FAILURE
+ * Return: int data type ...
  */
 int main(int argc, char *argv[])
 {

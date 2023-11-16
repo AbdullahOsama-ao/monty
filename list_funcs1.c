@@ -1,10 +1,11 @@
+#include "lists.h"
 #include "monty.h"
 
 /**
- * dlistint_len - returns the number of nodes in a doubly linked list
- * @h: pointer to the list
+ * dlistint_len - my func ..
+ * @h: para ..
  *
- * Return: number of nodes
+ * Return: advanced ...
  */
 size_t dlistint_len(const dlistint_t *h)
 {
@@ -23,11 +24,11 @@ size_t dlistint_len(const dlistint_t *h)
 }
 
 /**
- * add_dnodeint - adds a new node at the beginning of a doubly linked list
- * @head: double pointer to the list
- * @n: data to insert in the new node
+ * add_dnodeint - my func ..
+ * @head: para ..
+ * @n: para ..
  *
- * Return: the address of the new element, or NULL if it failed
+ * Return: advanced ..
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -54,10 +55,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 }
 
 /**
- * print_dlistint - prints a doubly linked list
- * @h: pointer to the list
+ * print_dlistint - my func ..
+ * @h: para ..
  *
- * Return: number of nodes in the list
+ * Return: advanced ..
  */
 size_t print_dlistint(const dlistint_t *h)
 {
@@ -77,12 +78,11 @@ size_t print_dlistint(const dlistint_t *h)
 }
 
 /**
- * delete_dnodeint_at_index - deltes a node in a doubly linked list
- * at a given index
- * @head: double pointer to the list
- * @index: index of the node to delete
+ * delete_dnodeint_at_index - my func ..
+ * @head: para ..
+ * @index: para ..
  *
- * Return: 1 on success, -1 on failure
+ * Return: int data type ..
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -116,11 +116,11 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 }
 
 /**
- * get_dnodeint_at_index - gets the nth node of a doubly linked list
- * @head: pointer to the list
- * @index: index of the node to return
+ * get_dnodeint_at_index - my func ..
+ * @head: para ..
+ * @index: para ..
  *
- * Return: address of the node, or if it does not exist, NULL
+ * Return: advanced ..
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {

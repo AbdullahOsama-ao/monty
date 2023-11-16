@@ -1,10 +1,12 @@
-#include "monty.h"
 #include "lists.h"
+#include "monty.h"
 
 /**
- * rotl_handler - handles the rotl instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * rotl_handler - my func ...
+ * @stack: para ..
+ * @line_number: para ..
+ * 
+ * Return: nothing ..
  */
 void rotl_handler(stack_t **stack, unsigned int line_number)
 {
@@ -22,9 +24,11 @@ void rotl_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * rotr_handler - handles the rotr instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * rotr_handler - my func ..
+ * @stack: para ..
+ * @line_number: apra ..
+ * 
+ * Return: nohting ...
  */
 void rotr_handler(stack_t **stack, unsigned int line_number)
 {
@@ -42,9 +46,11 @@ void rotr_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * stack_handler - handles the stack instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * stack_handler - my func ..
+ * @stack: para ..
+ * @line_number: para ..
+ * 
+ * Return: nothing ..
  */
 void stack_handler(stack_t **stack, unsigned int line_number)
 {
@@ -55,9 +61,11 @@ void stack_handler(stack_t **stack, unsigned int line_number)
 
 
 /**
- * queue_handler - handles the queue instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * queue_handler - my func ..
+ * @stack: para ..
+ * @line_number: para ..
+ * 
+ * Return: nohting ..
  */
 void queue_handler(stack_t **stack, unsigned int line_number)
 {

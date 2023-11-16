@@ -1,10 +1,12 @@
-#include "monty.h"
 #include "lists.h"
+#include "monty.h"
 
 /**
- * pint_handler - handles the pint instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * pint_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nothing ..
  */
 void pint_handler(stack_t **stack, unsigned int line_number)
 {
@@ -21,9 +23,11 @@ void pint_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pop_handler - handles the pop instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * pop_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nothing ..
  */
 void pop_handler(stack_t **stack, unsigned int line_number)
 {
@@ -40,9 +44,11 @@ void pop_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * swap_handler - handles the swap instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * swap_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nothing ..
  */
 void swap_handler(stack_t **stack, unsigned int line_number)
 {
@@ -69,9 +75,11 @@ void swap_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * add_handler - handles the add instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * add_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nohthing ..
  */
 void add_handler(stack_t **stack, unsigned int line_number)
 {
@@ -100,9 +108,11 @@ void add_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * nop_handler - handles the nop instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * nop_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nothing ...
  */
 void nop_handler(stack_t **stack, unsigned int line_number)
 {

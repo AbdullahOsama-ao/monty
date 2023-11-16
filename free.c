@@ -1,9 +1,11 @@
-#include "monty.h"
 #include "lists.h"
+#include "monty.h"
 
 /**
- * free_all - custom memory handling function
- * @all: flag to indicate what to free
+ * free_all - my func ..
+ * @all: 1st para ..
+ * 
+ * Return: nothing ...
  */
 void free_all(int all)
 {

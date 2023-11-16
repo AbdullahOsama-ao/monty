@@ -1,10 +1,12 @@
-#include "monty.h"
 #include "lists.h"
+#include "monty.h"
 
 /**
- * pchar_handler - handles the pchar instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * pchar_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ *
+ * Return: nothing ...
  */
 void pchar_handler(stack_t **stack, unsigned int line_number)
 {
@@ -29,9 +31,11 @@ void pchar_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pstr_handler - handles the pstr instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * pstr_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nohting ...
  */
 void pstr_handler(stack_t **stack, unsigned int line_number)
 {

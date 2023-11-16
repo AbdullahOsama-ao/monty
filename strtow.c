@@ -1,11 +1,11 @@
-#include "monty.h"
 #include "lists.h"
+#include "monty.h"
 
 /**
- * count_word - helper function to count the number of words in a string
- * @s: string to evaluate
+ * count_word - my func ..
+ * @s: para ..
  *
- * Return: number of words
+ * Return: para ..
  */
 int count_word(char *s)
 {
@@ -28,11 +28,10 @@ int count_word(char *s)
 	return (w);
 }
 /**
- * **strtow - splits a string into words
- * @str: string to split
+ * **strtow - my func ..
+ * @str: para ..
  *
- * Return: pointer to an array of strings (Success)
- * or NULL (Error)
+ * Return: char datra type ..
  */
 char **strtow(char *str)
 {
@@ -76,8 +75,10 @@ char **strtow(char *str)
 }
 
 /**
- * free_everything - frees arrays of strings
- * @args: array of strings to free
+ * free_everything - my func ..
+ * @args: para ..
+ * 
+ * Return: nothing ...
  */
 void free_everything(char **args)
 {

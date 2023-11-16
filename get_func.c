@@ -1,11 +1,12 @@
-#include "monty.h"
 #include "lists.h"
+#include "monty.h"
+
 
 /**
- * get_func - selects the right function
- * @parsed: line from the bytecode file passed to main
+ * get_func - my func ..
+ * @parsed: 1st para ..
  *
- * Return: pointer to the selected function, or NULL on failure
+ * Return: nothing ..
  */
 void (*get_func(char **parsed))(stack_t **, unsigned int)
 {
@@ -43,9 +44,11 @@ void (*get_func(char **parsed))(stack_t **, unsigned int)
 }
 
 /**
- * push_handler - handles the push instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * push_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nothing ..
  */
 void push_handler(stack_t **stack, unsigned int line_number)
 {
@@ -83,9 +86,11 @@ void push_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pall_handler - handles the pall instruction
- * @stack: double pointer to the stack to push to
- * @line_number: number of the line in the file
+ * pall_handler - my func ..
+ * @stack: 1st para ..
+ * @line_number: 2nd para ..
+ * 
+ * Return: nothing ..
  */
 void pall_handler(stack_t **stack, unsigned int line_number)
 {
