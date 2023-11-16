@@ -1,4 +1,4 @@
-# Stacks & Queues Projects
+# Stacks & Queues Project
 
 ## What is LIFO or FILO
 - That's The role of building Stacks
