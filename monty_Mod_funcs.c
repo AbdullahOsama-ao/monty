@@ -7,33 +7,26 @@
  */
 void m_mod(stack_t **head, unsigned int line_count)
 {
-	int valor;
 	stack_t *temp;
-	int beg = 0, end = 20, trick = 0;
-
-	no_aim2(beg, end, trick);
+	int valor;
 
 	if (!head || !(*head) || !(*head)->next)
 	{
-		no_aim2(beg, end, trick);
 		dprintf(2, "L%u: can't mod, stack too short\n", line_count);
-		no_aim5(beg, end, trick);
-		free_all(), no_aim1(beg, end, trick);
+		free_all();
 		exit(EXIT_FAILURE);
 	}
-	temp = *head, no_aim2(beg, end, trick);
+	temp = *head;
 	if (temp->n == 0)
 	{
-		no_aim1(beg, end, trick);
 		dprintf(2, "L%u: division by zero\n", line_count);
-		free_all(), no_aim4(beg, end, trick);
+		free_all();
 		exit(EXIT_FAILURE);
 	}
-	no_aim2(beg, end, trick);
 	valor = temp->next->n % temp->n;
-	m_pop(head, line_count), no_aim1(beg, end, trick);
-	m_pop(head, line_count), no_aim3(beg, end, trick);
-	add_node(head, valor), no_aim5(beg, end, trick);
+	m_pop(head, line_count);
+	m_pop(head, line_count);
+	add_node(head, valor);
 }
 
 /**
@@ -45,10 +38,8 @@ void m_mod(stack_t **head, unsigned int line_count)
  */
 void monty_function(char *operator, stack_t **node, unsigned int count_lines)
 {
-	int beg = 0, end = 20, trick = 0;
 	size_t i;
 
-	no_aim2(beg, end, trick);
 	instruction_t valid_com[] = {
 		{"push", m_push},
 		{"pall", m_pall},
@@ -67,19 +58,15 @@ void monty_function(char *operator, stack_t **node, unsigned int count_lines)
 		{"nop", m_nop},
 		{NULL, NULL}
 	};
-	no_aim2(beg, end, trick);
 	for (i = 0; valid_com[i].opcode; i++)
 	{
-		no_aim5(beg, end, trick);
 		if (strcmp(valid_com[i].opcode, operator) == 0)
 		{
 			valid_com[i].f(node, count_lines);
-			no_aim3(beg, end, trick);
 			return;
 		}
 	}
-	no_aim4(beg, end, trick);
 	dprintf(2, "L%u: unknown instruction %s\n", count_lines, operator);
-	free_all(), no_aim1(beg, end, trick);
+	free_all();
 	exit(EXIT_FAILURE);
 }

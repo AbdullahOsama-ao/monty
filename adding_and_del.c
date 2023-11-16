@@ -7,33 +7,24 @@
  */
 stack_t *add_node(stack_t **head, const int n)
 {
-	stack_t *new;
-	stack_t *temp;
-	int beg = 0, end = 20, trick = 0;
+	stack_t *new, *temp;
 
-	no_aim1(beg, end, trick);
 	new = malloc(sizeof(stack_t));
 	if (!new)
 		return (NULL);
-	no_aim1(beg, end, trick);
-
 	new->n = n;
 	new->prev = NULL;
 	temp = *head;
 	if (!*head)
 	{
-		no_aim1(beg, end, trick);
 		new->next = NULL;
 	}
 	else
 	{
-		no_aim1(beg, end, trick);
 		new->next = temp;
 		temp->prev = new;
 	}
-
 	*head = new;
-	no_aim1(beg, end, trick);
 	return (new);
 }
 
@@ -47,29 +38,19 @@ void m_add(stack_t **head, unsigned int line_count)
 {
 	stack_t *temp;
 	int valor;
-	int beg = 0, end = 20, trick = 0;
-
-	no_aim2(beg, end, trick);
 
 	if (!head || !(*head) || !(*head)->next)
 	{
-		no_aim1(beg, end, trick);
 		dprintf(2, "L%u: can't add, stack too short\n", line_count);
-		no_aim2(beg, end, trick);
 		free_all();
-		no_aim1(beg, end, trick);
 		exit(EXIT_FAILURE);
 	}
-
-	no_aim2(beg, end, trick);
 	temp = *head;
 
 	valor = temp->n + temp->next->n;
 	m_pop(head, line_count);
-	no_aim2(beg, end, trick);
 	m_pop(head, line_count);
 	add_node(head, valor);
-	no_aim2(beg, end, trick);
 }
 
 
@@ -83,21 +64,20 @@ int delete_node(stack_t **head, unsigned int index)
 {
 	stack_t *temp;
 	unsigned int i = 0;
-	int beg = 0, end = 20, trick = 0;
 
 	if (!*head)
 		return (-1);
-	no_aim2(beg, end, trick), temp = *head;
+	temp = *head;
 	if (index == 0)
 	{
 		if (temp->next)
 		{
-			temp->next->prev = NULL, no_aim1(beg, end, trick);
+			temp->next->prev = NULL;
 			*head = temp->next;
 		}
 		else
 			*head = NULL;
-		free(temp), no_aim1(beg, end, trick);
+		free(temp);
 		return (1);
 	}
 	while (temp)
@@ -106,17 +86,16 @@ int delete_node(stack_t **head, unsigned int index)
 		{
 			if (temp->next)
 			{
-				temp->prev->next = temp->next, no_aim1(beg, end, trick);
+				temp->prev->next = temp->next;
 				temp->next->prev = temp->prev;
 			}
 			else
 				temp->prev->next = NULL;
-			free(temp), no_aim1(beg, end, trick);
+			free(temp);
 			return (1);
 		}
-		temp = temp->next, no_aim1(beg, end, trick);
+		temp = temp->next;
 		i++;
 	}
-	no_aim1(beg, end, trick);
 	return (-1);
 }

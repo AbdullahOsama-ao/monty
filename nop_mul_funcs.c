@@ -7,24 +7,21 @@
  */
 void m_mul(stack_t **head, unsigned int line_count)
 {
-	int valor;
-	int beg = 0, end = 20, trick = 0;
 	stack_t *temp;
+	int valor;
 
-	no_aim2(beg, end, trick);
 	if (!head || !(*head) || !(*head)->next)
 	{
-		no_aim5(beg, end, trick);
 		dprintf(2, "L%u: can't mul, stack too short\n", line_count);
-		free_all(), no_aim3(beg, end, trick);
+		free_all();
 		exit(EXIT_FAILURE);
 	}
-	no_aim5(beg, end, trick);
-	temp = *head, no_aim1(beg, end, trick);
+	temp = *head;
+
 	valor = temp->n * temp->next->n;
-	m_pop(head, line_count), no_aim2(beg, end, trick);
-	m_pop(head, line_count), no_aim2(beg, end, trick);
-	add_node(head, valor), no_aim4(beg, end, trick);
+	m_pop(head, line_count);
+	m_pop(head, line_count);
+	add_node(head, valor);
 }
 
 /**
