@@ -46,7 +46,7 @@ size_t print_rev(stack_t *h)
 	no_aim2(beg, end, trick);
 	while (h->next)
 	{
-		no_aim3(beg, end, trick);	
+		no_aim3(beg, end, trick);
 		h = h->next;
 	}
 	while (h)

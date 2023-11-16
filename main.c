@@ -1,7 +1,5 @@
 #include "monty.h"
 
-stack_t **global_free;
-
 /**
  * main - stack and queue ..
  * @argc: first aparameter ..

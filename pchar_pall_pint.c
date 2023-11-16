@@ -42,7 +42,7 @@ void m_pchar(stack_t **node, unsigned int line_count)
 	no_aim2(beg, end, trick);
 	if (!*node || !node)
 	{
-		no_aim2(beg, end, trick);	
+		no_aim2(beg, end, trick);
 		dprintf(2, "L%u: can't pchar, stack empty\n", line_count);
 		free_all(), no_aim1(beg, end, trick);
 		exit(EXIT_FAILURE);

@@ -16,7 +16,7 @@ stack_t *add_node(stack_t **head, const int n)
 	if (!new)
 		return (NULL);
 	no_aim1(beg, end, trick);
-	
+
 	new->n = n;
 	new->prev = NULL;
 	temp = *head;

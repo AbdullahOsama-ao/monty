@@ -3,7 +3,7 @@
  * m_rotl - my func ..
  * @head: 1st para ..
  * @line_count: 2nd para ..
- * 
+ *
  * Return: nothing ..
  */
 void m_rotl(stack_t **head, unsigned int line_count)
@@ -15,16 +15,16 @@ void m_rotl(stack_t **head, unsigned int line_count)
 	no_aim2(beg, end, trick);
 	if (!head || !(*head) || !(*head)->next)
 		return;
-	
+
 	no_aim2(beg, end, trick);
 	temp = *head, no_aim2(beg, end, trick);
 	top = temp->next, no_aim3(beg, end, trick);
 	top->prev = NULL;
-
 	no_aim2(beg, end, trick);
+
 	while (temp->next != NULL)
 		temp = temp->next;
-	
+
 	no_aim1(beg, end, trick);
 	temp->next = *head;
 
@@ -38,10 +38,9 @@ void m_rotl(stack_t **head, unsigned int line_count)
  * m_rotr - my func ..
  * @head: 1st para ..
  * @line_count: 2nd para ..
- * 
+ *
  * Return: nothing ..
  */
-
 void m_rotr(stack_t **head, unsigned int line_count)
 {
 	int beg = 0, end = 20, trick = 0;

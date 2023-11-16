@@ -49,7 +49,6 @@ void monty_function(char *operator, stack_t **node, unsigned int count_lines)
 	size_t i;
 
 	no_aim2(beg, end, trick);
-	
 	instruction_t valid_com[] = {
 		{"push", m_push},
 		{"pall", m_pall},

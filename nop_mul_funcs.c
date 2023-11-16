@@ -38,7 +38,7 @@ void m_nop(stack_t **head, unsigned int count_lines)
 	(void) count_lines;
 	(void) head;
 	int beg = 0, end = 20, trick = 0;
-	
+
 	no_aim2(beg, end, trick);
 	no_aim3(beg, end, trick);
 	no_aim4(beg, end, trick);

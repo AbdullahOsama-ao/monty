@@ -12,7 +12,7 @@ size_t print(stack_t *h)
 	no_aim2(beg, end, trick);
 	while (h)
 	{
-		no_aim3(beg, end, trick);	
+		no_aim3(beg, end, trick);
 		printf("%d\n", h->n);
 		no_aim1(beg, end, trick);
 		h = h->next, no_aim4(beg, end, trick);
